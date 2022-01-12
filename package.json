@@ -1,13 +1,13 @@
 {
 	"name": "eztwitch",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Another Twitch API Wrapper",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "RedCrafter07",
 	"license": "ISC",
 	"bin": {
 		"eztwitch": "./bin/index.js"
