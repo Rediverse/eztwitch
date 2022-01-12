@@ -8,7 +8,7 @@
 	},
 	"keywords": [],
 	"author": "RedCrafter07",
-	"license": "ISC",
+	"license": "MIT",
 	"bin": {
 		"eztwitch": "./bin/index.js"
 	},
