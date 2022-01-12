@@ -1,5 +1,5 @@
 {
-	"name": "eztwitch",
+	"name": "@redcrafter07/eztwitch",
 	"version": "1.0.0",
 	"description": "Another Twitch API Wrapper",
 	"main": "index.js",
@@ -16,7 +16,6 @@
 		"axios": "^0.24.0",
 		"chalk": "^4.1.2",
 		"command-line-args": "^5.2.0",
-		"fs": "^0.0.1-security",
 		"node-json-db": "^1.4.1"
 	},
 	"repository": {
