@@ -1,7 +1,7 @@
 {
 	"name": "@redcrafter07/eztwitch",
-	"version": "1.0.1",
-	"description": "Another Twitch API Wrapper",
+	"version": "1.0.2",
+	"description": "Another Twitch API CLI & Wrapper",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
