@@ -50,3 +50,5 @@ eztwitch token -c
 ```--noInfo``` or ```-n``` directly fetches your token and don't has a fancy console output.
 
 ```--secret``` or ```-s``` sets the token (not required if you use -c or --config)
+
+```--save``` saves the fetched token in the config.
