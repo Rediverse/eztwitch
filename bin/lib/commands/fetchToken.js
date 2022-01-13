@@ -30,6 +30,11 @@ module.exports = async (argv, db) => {
 			alias: 'd',
 			type: Boolean,
 			multiple: false
+		},
+		{
+			name: 'save',
+			type: Boolean,
+			multiple: false
 		}
 	];
 
@@ -72,9 +77,7 @@ module.exports = async (argv, db) => {
 			process.stdout.clearLine();
 			process.stdout.cursorTo(0);
 			process.stdout.write(chalk.yellow('[2/3][1/3] Sending request...'));
-			let res = await axios.post(
-				`https://id.twitch.tv/oauth2/token?client_id=${id}&client_secret=${secret}&grant_type=client_credentials`
-			);
+			let res = await require('../../../lib/fetchToken')(id, secret);
 
 			process.stdout.clearLine();
 			process.stdout.cursorTo(0);
@@ -96,6 +99,10 @@ module.exports = async (argv, db) => {
 					log(res.data);
 				}
 				log(chalk.green(`[3/3] Your token is: \n"Bearer ${res.data.access_token}"`));
+				if (options.save) {
+					db.push('/token', `Bearer ${res.data.access_token}`);
+					log(chalk.green('[-/3] Token saved!'));
+				}
 			}, 500);
 		}, 250);
 	} else {
