@@ -6,10 +6,7 @@ const chalk = require('chalk'),
 	axios = require('axios').default,
 	log = console.log;
 
-const { JsonDB } = require('node-json-db');
-const { Config } = require('node-json-db/dist/lib/JsonDBConfig');
-
-let db = new JsonDB(new Config('config', true, false, '/'));
+let db = require('../lib/db');
 
 const mainDefinitions = [ { name: 'command', defaultOption: true } ];
 const options = commandLineArgs(mainDefinitions, { stopAtFirstUnknown: true });
