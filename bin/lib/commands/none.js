@@ -32,7 +32,7 @@ module.exports = async () => {
 					out.end();
 					setTimeout(() => {
 						out.edit(
-							'To get started, go to our official documentation at https://github.com/Rediverse/EZTwitch!'
+							'To get started, go to our official documentation at https://github.com/Rediverse/eztwitch/wiki/The-CLI.'
 						);
 					}, 100);
 				}, 1500);
