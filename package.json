@@ -1,6 +1,6 @@
 {
 	"name": "@redcrafter07/eztwitch",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Another Twitch API CLI & Wrapper",
 	"main": "index.js",
 	"scripts": {
@@ -16,6 +16,7 @@
 		"axios": "^0.24.0",
 		"chalk": "^4.1.2",
 		"command-line-args": "^5.2.0",
+		"fs": "^0.0.1-security",
 		"moment": "^2.29.1",
 		"node-json-db": "^1.4.1"
 	},
