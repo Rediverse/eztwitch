@@ -3,6 +3,9 @@ const chalk = require('chalk'),
 
 module.exports = async (options, argv, db) => {
 	switch (options.command) {
+		case 'create-app':
+			await require('./commands/create-app')(options, argv, db);
+			break;
 		case 'config':
 			await require('./commands/config')(argv, db);
 			break;
