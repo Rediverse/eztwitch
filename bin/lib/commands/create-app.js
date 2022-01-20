@@ -30,11 +30,11 @@ module.exports = async (options, argv, db) => {
 		out.clear().edit(chalk.yellow('Initializing NPM...')).end();
 		await exec(`npm init -y`, { cwd: `${process.cwd()}/${name}` }, async () => {
 			out.clear().edit(chalk.yellow('Installing packages...')).end();
-			await exec(`npm i --save @redcrafter07/eztwitch`, { cwd: `${process.cwd()}/${name}` }, async () => {
+			await exec(`npm i --save eztw`, { cwd: `${process.cwd()}/${name}` }, async () => {
 				out.clear().edit(chalk.yellow('Creating index.js...')).end();
 				await fs.writeFileSync(
 					`${`${process.cwd()}/${name}/`}index.js`,
-					`const EZTwitch = require('@redcrafter07/eztwitch');\n
+					`const EZTwitch = require('eztw');\n
 		const client = new EZTwitch.client().setToken(${token ? `'${token}'` : 'your-token-here'}).setSecret(${secret
 						? `'${secret}'`
 						: 'your-secret-here'}).setID(${id ? `'${id}'` : 'your-id-here'});\n
