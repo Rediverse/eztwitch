@@ -1,5 +1,5 @@
 {
-	"name": "@redcrafter07/eztwitch",
+	"name": "eztw",
 	"version": "1.0.4",
 	"description": "Another Twitch API CLI & Wrapper",
 	"main": "index.js",
