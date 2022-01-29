@@ -1,6 +1,6 @@
 {
 	"name": "eztw",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Another Twitch API CLI & Wrapper",
 	"main": "index.js",
 	"scripts": {
